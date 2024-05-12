@@ -1,0 +1,131 @@
+/**!MOBILE!**/
+
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    place-items: center;
+    height: 100vh;
+  }
+
+.navbar {
+  display: none;
+}
+
+h1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+body {
+  margin-top: 30px;
+}
+.main_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination {
+  margin: 8px;
+}
+
+.icons {
+  font-size: 25px;
+  text-align: center;
+}
+.rights {
+  margin:0px;
+  padding:0px;
+  text-align: center;
+}
+}
+
+
+/*!DESKTOP!*/
+@media (min-width: 577px) {
+  .grid-container {
+display:grid;
+grid-template-columns:1.5fr 3.5fr;
+grid-template-rows:auto 1fr auto;
+
+
+  }
+
+  nav {
+    grid-row: 1 / 4; /* SIDEBAR занимает весь вертикальный пространство */
+    grid-column: 1;
+  }
+  .search {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  
+  i.hamburg {display: none;}
+
+  ul {list-style: none;}
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea cuatro columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor de las tarjetas dentro del contenedor */
+  }
+  
+  .card {
+    background: #fff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ccc; /* Borde para las tarjetas */
+    padding: 10px; /* Espacio dentro de cada tarjeta */
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  .card img {
+    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+.pagination {
+  text-align: center;
+  font-size: 25px;
+}
+
+.search {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:20px;
+}
+  option {text-align: center;}
+h1, ul, .icons, .rights {text-align: center;}
+
+
+.icons {font-size: 50px;}
+.rights {font-size: 30px;}
+ul {font-size: 25px;}
+h1 {font-size: 50px;}
+
+.cards p {font-size: 20px;}
+h3 {font-size: 30px;}
+
+#ordenar {
+  font-size: 16px; /* Aumenta el tamaño de la fuente para que sea más legible */
+  width: 200px; /* Ajusta el ancho del elemento select */
+ height:100px;
+
+}
